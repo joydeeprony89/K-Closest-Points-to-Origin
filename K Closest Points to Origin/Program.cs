@@ -13,6 +13,8 @@ namespace K_Closest_Points_to_Origin
                 Console.WriteLine(string.Join(",", result));
         }
 
+        // complexity O(NlogN)
+
         static public int[][] KClosest(int[][] points, int k)
         {
             SortedDictionary<double, List<int[]>> map = new SortedDictionary<double, List<int[]>>();
